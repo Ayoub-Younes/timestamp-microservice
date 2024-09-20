@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamp Microservice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Timestamp Microservice</h1>
+        <p class="subtitle">Convert any valid date or Unix timestamp to both Unix and UTC formats</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>How It Works</h2>
+            <p>This microservice accepts a date or a Unix timestamp as a parameter in the URL and returns the corresponding Unix time and UTC format as a JSON response.</p>
+            <p>For example, you can try entering a date string or Unix timestamp directly in the API URLs below to get the conversion results:</p>
+        </section>
+
+        <section class="examples">
+            <h2>Example Usage:</h2>
+            <ul>
+                <li><a href="/api/2015-12-25">[project url]/api/2015-12-25</a></li>
+                <li><a href="/api/1451001600000">[project url]/api/1451001600000</a></li>
+            </ul>
+            <h2>Example Output:</h2>
+            <p><code>{"unix":1451001600000, "utc":"Fri, 25 Dec 2015 00:00:00 GMT"}</code></p>
+        </section>
+
+        <section class="note">
+            <h3>Note:</h3>
+            <p>The date can be provided in YYYY-MM-DD format, and the timestamp should be in milliseconds (Unix time).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>This project serves as a basic API microservice to demonstrate date-time conversion.</p>
+        <p><strong>Important:</strong> This is purely for demonstration and testing purposes on the API level.</p>
+    </footer>
+
+</body>
+</html>
